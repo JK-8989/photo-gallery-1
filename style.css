@@ -1,0 +1,229 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: top;
+  margin-bottom: 0.8em;
+}
+body {
+  background: #ddd;
+}
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.container {
+  background: #fff;
+  max-width: 90%;
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 30px 7px rgba(0,0,0,0.3);
+  padding: 50px 20px;
+  border-radius: 20px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header h1 {
+  font-size: 2.8rem;
+  padding-top: 20px;
+}
+form {
+  margin: 30px auto;
+  width: 80%;
+  position: relative;
+  border-bottom: 2px solid rgb(128, 128, 128, 0.8);
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+  background: transparent;
+}
+input {
+  max-width: 70%;
+  width: 700px;
+  padding: 5px 10px;
+  border: none;
+  margin-left: 1%;
+  outline: none;
+}
+input::placeholder {
+  color: grey;
+  opacity: 0.5;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+ion-icon {
+  font-size: 20px;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 0;
+  right: 1%;
+}
+.gallery {
+  max-width: 100%;
+  columns: 3;
+  /* gap: 1.5em; */
+  margin: 20px auto;
+}
+@media only screen and (max-width: 500px) {
+  .gallery {
+    columns: 1;
+  }
+}
+@media only screen and (min-width: 501px) {
+  .gallery {
+    columns: 2;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .gallery {
+    columns: 3;
+    margin-top: 70px;
+  }
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  form {
+    width: 50%;
+    margin: 0 10px;
+  }
+}
+.item {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  vertical-align: top;
+  margin-bottom: 1em;
+}
+.item:hover {
+  box-shadow: 0 0 5px 3px rgba(0,0,0,0.3);
+}
+h2 {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background: rgba(0,0,0,0.3);
+  color: #ddd;
+  bottom: -100px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  transition: all 0.5s ease;
+}
+.item:hover h2 {
+  bottom: 0;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+/* body {
+  margin: 0;
+  width: 100vw;
+  height: auto;
+}
+section {
+  height: auto;
+}
+h1 {
+  text-align: center;
+  padding-top: 1em;
+  font-size: 2.8rem;
+}
+form {
+  text-align: center;
+  position: relative;
+  margin-bottom: 60px;
+}
+input {
+  max-width: 70%;
+  width: 700px;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 2px solid grey;
+}
+ion-icon {
+  font-size: 20px;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+}
+.gallery {
+  max-width: 70vw;
+  margin: auto;
+  columns: 3;
+  gap: 1.5em;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  position: relative;
+  z-index: 0;
+}
+.item {
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+h2 {
+  position: absolute;
+  bottom: 30px;
+  left: -300px;
+  font-size: 15px;
+  transition: all 1s;
+  margin-bottom: 0;
+  opacity: 0;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 15px 50px;
+}
+.item:hover h2{
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.load-more {
+  display: block;
+  width: 50%;
+  text-decoration: none;
+  margin: 20px auto 100px auto;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 0.7rem;
+  text-align: center;
+  word-spacing: 5px;
+}
+.load-more:hover {
+  background: rgba(0,0,0,0.5);
+}
+.load-more:active {
+  box-shadow: 0 0 5px rgba(0,0,0, 0.5);
+  background: rgba(0,0,0);
+}
+ */
+
