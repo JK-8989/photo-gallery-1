@@ -86,7 +86,7 @@ class PhotoGallery {
       item.innerHTML = `
       <a href='#'>
       <img src='${photos.src.medium}'>
-      <h2>Photo by ${photos.photographer}</h2>
+      <h2>${photos.photographer}</h2>
       </a>
       `;
       this.galleryDiv.appendChild(item)
